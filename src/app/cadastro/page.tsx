@@ -55,15 +55,22 @@ export default function CadastroPage() {
     } catch (error: unknown) {
       // Trata erros de cadastro
       console.error("Erro ao cadastrar:", error);
-      if (error.code === "auth/email-already-in-use") {
+
+    let errorCode: string | undefined = undefined;
+      if (typeof error === "object" && error !== null && "code" in error) {
+        errorCode = (error as { code: string }).code;
+      }
+
+      if (errorCode === "auth/email-already-in-use") {
         setError("Este e-mail já está em uso.");
-      } else if (error.code === "auth/invalid-email") {
+      } else if (errorCode === "auth/invalid-email") {
         setError("Formato de e-mail inválido.");
-      } else if (error.code === "auth/weak-password") {
+      } else if (errorCode === "auth/weak-password") {
         setError("A senha é muito fraca. Tente uma senha mais forte.");
       } else {
         setError("Ocorreu um erro ao realizar o cadastro. Tente novamente.");
-      }
+
+
     } finally {
       setLoading(false);
     }
