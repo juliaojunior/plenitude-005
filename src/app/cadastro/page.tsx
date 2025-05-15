@@ -69,8 +69,7 @@ export default function CadastroPage() {
         setError("A senha é muito fraca. Tente uma senha mais forte.");
       } else {
         setError("Ocorreu um erro ao realizar o cadastro. Tente novamente.");
-
-
+      }
     } finally {
       setLoading(false);
     }
