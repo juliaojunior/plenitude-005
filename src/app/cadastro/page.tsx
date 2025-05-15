@@ -157,8 +157,7 @@ export default function CadastroPage() {
         </form>
 
         <p className="mt-8 text-center text-sm text-gray-400">
-          Já tem uma conta?{"
-"}
+          Já tem uma conta?{' '}
           <a
             href="/login"
             className="font-medium text-indigo-400 hover:text-indigo-300"
@@ -170,4 +169,3 @@ export default function CadastroPage() {
     </div>
   );
 }
-
