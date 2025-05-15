@@ -59,11 +59,18 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   // Função para realizar login com o Google
   const signInWithGoogle = async () => {
     setLoading(true);
+
+    if (!auth) {
+      console.error("Firebase auth não inicializado.");
+      setLoading(false);
+      return;
+    }
     try {
       await signInWithPopup(auth, googleProvider); // Abre o popup de login do Google
       // O onAuthStateChanged cuidará de atualizar o estado do usuário e loading
     } catch (error) {
       console.error("Erro ao fazer login com Google:", error);
+    } finally {
       setLoading(false); // Garante que o loading seja desativado em caso de erro
     }
   };
