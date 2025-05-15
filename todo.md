@@ -1,0 +1,11 @@
+- [x] Gerar ícone 384x384px para o PWA.
+- [x] Gerar ícone 256x256px para o PWA.
+- [x] Gerar ícone 192x192px para o PWA.
+- [x] Criar arquivo `public/user-placeholder.svg` para a tela de perfil.
+- [x] Revisar todos os arquivos gerados para garantir que os comentários estão claros e em português brasileiro.
+- [x] Revisar a consistência do design (cores azul marinho e roxo escuro, tema escuro).
+- [x] Verificar se todas as funcionalidades solicitadas estão implementadas (Login, Tela Principal, Tela de Perfil, Navegação, Logout, Placeholder de Registro).
+- [x] Garantir que o PWA (manifest.json, service worker com next-pwa) está configurado corretamente.
+- [x] Criar um arquivo `README.md` com instruções detalhadas sobre como configurar o Firebase, instalar dependências e rodar o projeto.
+- [x] Compactar a pasta do projeto `plenitude-pwa` em um arquivo zip.
+- [ ] Enviar a mensagem final para o usuário com o arquivo zip e as instruções.
