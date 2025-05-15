@@ -21,7 +21,7 @@ function MeditacoesSalvasPageContent() {
   const { user } = useAuth(); // Pode ser usado para buscar meditações salvas específicas do usuário no futuro
 
   // Placeholder para meditações salvas - no futuro, viria de um estado ou API
-  const meditacoesSalvas: any[] = []; // Array vazio por enquanto
+  const meditacoesSalvas: unknown[] = []; // Array vazio por enquanto
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-blue-900 text-white flex flex-col items-center pt-10 pb-24 px-4">

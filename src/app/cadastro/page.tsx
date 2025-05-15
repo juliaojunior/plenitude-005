@@ -45,7 +45,7 @@ export default function CadastroPage() {
       // Cadastro bem-sucedido, redireciona para a página de login
       alert("Cadastro realizado com sucesso! Você será redirecionado para o login.");
       router.push("/login");
-    } catch (error: any) {
+    } catch (error: unknown) {
       // Trata erros de cadastro
       console.error("Erro ao cadastrar:", error);
       if (error.code === "auth/email-already-in-use") {

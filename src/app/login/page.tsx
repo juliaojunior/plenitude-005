@@ -6,7 +6,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation'; // Hook para navegação programática
 import { useAuth } from '@/contexts/AuthContext'; // Hook customizado para acesso ao contexto de autenticação
-import Image from 'next/image'; // Componente para otimização de imagens (se usarmos uma imagem local)
+//import Image from 'next/image'; // Componente para otimização de imagens (se usarmos uma imagem local)
 
 // Componente da Página de Login
 export default function LoginPage() {

@@ -104,7 +104,7 @@ function ManaDiarioPageContent() {
           Palavra do Dia
         </h2>
         <blockquote className="text-lg italic text-blue-200 mb-3 border-l-4 border-blue-400 pl-4">
-          "O Senhor é o meu pastor; de nada terei falta. Em verdes pastagens me faz repousar e me conduz a águas tranquilas; restaura-me o vigor."
+          &quot;O Senhor é o meu pastor; de nada terei falta. Em verdes pastagens me faz repousar e me conduz a águas tranquilas; restaura-me o vigor.&quot;
         </blockquote>
         <p className="text-right text-sm text-gray-400 mb-4">- Salmos 23:1-3a</p>
         <h3 className="text-xl font-medium text-gray-200 mb-2">Comentário:</h3>
