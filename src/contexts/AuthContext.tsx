@@ -79,6 +79,10 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const signOut = async () => {
     setLoading(true);
     try {
+      if (!auth) {
+        console.warn("Auth não inicializado, abortando logout.");
+        return;
+      }
       await firebaseSignOut(auth); // Desloga o usuário do Firebase
       // O onAuthStateChanged cuidará de atualizar o estado do usuário para null e loading
     } catch (error) {
