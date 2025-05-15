@@ -42,6 +42,10 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   // Efeito para observar mudanças no estado de autenticação do Firebase
   useEffect(() => {
+     if (!auth) {
+    setLoading(false);
+    return;
+    }
     // onAuthStateChanged retorna uma função para cancelar a inscrição (unsubscribe)
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser); // Atualiza o estado do usuário
