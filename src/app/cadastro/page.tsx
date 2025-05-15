@@ -24,6 +24,13 @@ export default function CadastroPage() {
       return;
     }
 
+    if (!auth) {
+      setError("Erro na configuração da autenticação. Tente novamente mais tarde.");
+      console.error("Objeto auth do Firebase está nulo.");
+      setLoading(false); // Certifique-se de parar o loading se houver erro aqui
+      return;
+    }
+
     setLoading(true);
 
     try {
